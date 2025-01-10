@@ -1,4 +1,4 @@
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 
 const EpiFooter = () => {
   return (
@@ -106,12 +106,9 @@ const EpiFooter = () => {
           </Row>
           <Row>
             <Col className='mb-2'>
-              <button
-                type='button'
-                className='btn btn-sm footer-button rounded-0 mt-3  text-secondary'
-              >
+              <Button variant='secondary' className=' rounded-0 mt-3'>
                 Service Code
-              </button>
+              </Button>
             </Col>
           </Row>
           <Row className=' text-secondary'>

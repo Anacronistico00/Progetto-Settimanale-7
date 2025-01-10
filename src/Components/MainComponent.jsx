@@ -1,4 +1,4 @@
-import { Dropdown, Row } from 'react-bootstrap';
+import { Carousel, Dropdown, Row } from 'react-bootstrap';
 import CardRow from './CardRow';
 
 const MainContent = () => {
@@ -41,10 +41,14 @@ const MainContent = () => {
           <i className='bi bi-grid-3x3 icons fs-4'></i>
         </div>
       </div>
-      <h2>Trending Now</h2>
-      <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
-        <CardRow searchKey='Harry Potter' />
-      </Row>
+      <Carousel>
+        <h2>Trending Now</h2>
+        <Carousel.Item>
+          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+            <CardRow searchKey='Harry Potter' />
+          </Row>
+        </Carousel.Item>
+      </Carousel>
       <h2>Watch it Again</h2>
       <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
         <CardRow searchKey='Lord of the rings' />
