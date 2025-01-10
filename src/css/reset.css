@@ -13,3 +13,7 @@ a {
   color: #6c7571;
   text-decoration: none;
 }
+
+a:hover {
+  color: white !important;
+}

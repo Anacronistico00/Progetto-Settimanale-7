@@ -33,7 +33,7 @@ const EpiNavbar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href='#' className='text-white fw-bold'>
+            <Nav.Link href='#' className='text-white fw-bold nav'>
               <i className='bi bi-search icons'></i>
             </Nav.Link>
             <Nav.Link href='#' className='text-white fw-bold'>

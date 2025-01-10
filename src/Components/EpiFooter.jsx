@@ -3,20 +3,20 @@ import { Row, Col } from 'react-bootstrap';
 const EpiFooter = () => {
   return (
     <footer>
-      <div className='row justify-content-center mt-5'>
-        <div className='col col-6'>
-          <div className='row'>
-            <div className='col mb-2 text-secondary'>
+      <Row xs={2} className='justify-content-center mt-5'>
+        <Col>
+          <Row>
+            <Col className='mb-2 text-secondary'>
               <i className='bi bi-facebook footer-icon me-2'></i>
               <i className='bi bi-instagram footer-icon me-2'></i>
               <i className='bi bi-twitter-x footer-icon me-2'></i>
               <i className='bi bi-youtube footer-icon'></i>
-            </div>
-          </div>
-          <div className='row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4'>
-            <div className='col'>
-              <div className='row'>
-                <div className='col footer-links'>
+            </Col>
+          </Row>
+          <Row xs={1} sm={2} md={4}>
+            <Col>
+              <Row>
+                <Col>
                   <p>
                     <a href='#' alt='footer link'>
                       Audio and Subtitles
@@ -37,12 +37,12 @@ const EpiFooter = () => {
                       Contact us
                     </a>
                   </p>
-                </div>
-              </div>
-            </div>
-            <div className='col'>
-              <div className='row'>
-                <div className='col footer-links'>
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                <Col>
                   <p>
                     <a href='#' alt='footer link'>
                       Audio Description
@@ -58,12 +58,12 @@ const EpiFooter = () => {
                       Legal Notices
                     </a>
                   </p>
-                </div>
-              </div>
-            </div>
-            <div className='col'>
-              <div className='row'>
-                <div className='col footer-links'>
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                <Col className='footer-links'>
                   <p>
                     <a href='#' alt='footer link'>
                       Help Center
@@ -79,12 +79,12 @@ const EpiFooter = () => {
                       Cookie Preferences
                     </a>
                   </p>
-                </div>
-              </div>
-            </div>
-            <div className='col'>
-              <div className='row'>
-                <div className='col'>
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                <Col>
                   <p>
                     <a href='#' alt='footer link'>
                       Gift Cards
@@ -100,27 +100,27 @@ const EpiFooter = () => {
                       Corporate Information
                     </a>
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col mb-2'>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col className='mb-2'>
               <button
                 type='button'
                 className='btn btn-sm footer-button rounded-0 mt-3  text-secondary'
               >
                 Service Code
               </button>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <Row className=' text-secondary'>
             <Col className=' mb-2 mt-2 copyright'>
               © 1997-2023 Netflix, Inc.
             </Col>
           </Row>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </footer>
   );
 };

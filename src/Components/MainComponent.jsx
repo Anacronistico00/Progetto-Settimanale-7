@@ -42,16 +42,15 @@ const MainContent = () => {
         </div>
       </div>
       <h2>Trending Now</h2>
-      <Row xs={1} sm={2} md={3} xl={6} className='my-3 text-center'>
-        <CardRow searchKey='Mr bean' />
-      </Row>
-
-      <h2>Watch it Again</h2>
-      <Row xs={1} sm={2} md={3} xl={6} className='my-3 text-center'>
+      <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
         <CardRow searchKey='Harry Potter' />
       </Row>
+      <h2>Watch it Again</h2>
+      <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+        <CardRow searchKey='Lord of the rings' />
+      </Row>
       <h2>New Releases</h2>
-      <Row xs={1} sm={2} md={3} xl={6} className='my-3 text-center'>
+      <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
         <CardRow searchKey='Hitman' />
       </Row>
     </div>

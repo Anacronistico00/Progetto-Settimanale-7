@@ -2,13 +2,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import EpiNavbar from '../src/Components/EpiNavbar';
 import './css/reset.css';
 import EpiFooter from './Components/EpiFooter';
-import MainContent from './Components/MainContent';
+import MainComponent from './Components/MainComponent';
 
 function App() {
   return (
     <>
       <EpiNavbar />
-      <MainContent />
+      <MainComponent />
       <EpiFooter />
     </>
   );

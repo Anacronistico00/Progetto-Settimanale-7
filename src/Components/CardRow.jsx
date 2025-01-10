@@ -36,7 +36,7 @@ class CardRow extends Component {
       <>
         {this.state.search.map((film, i) => {
           return (
-            <Col key={i}>
+            <Col key={i} className='px-1'>
               <img
                 src={film.Poster}
                 alt={film.Title}
