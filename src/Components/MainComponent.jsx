@@ -57,12 +57,12 @@ const MainContent = () => {
       <h2>Watch it Again</h2>
       <Carousel>
         <Carousel.Item>
-          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+          <Row xs={1} sm={2} md={3} lg={6}>
             <CardRow searchKey='Lord of the rings' />
           </Row>
         </Carousel.Item>
         <Carousel.Item>
-          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+          <Row xs={1} sm={2} md={3} lg={6}>
             <CardRow searchKey='Lord of the rings' />
           </Row>
         </Carousel.Item>
@@ -70,12 +70,12 @@ const MainContent = () => {
       <h2>New Releases</h2>
       <Carousel>
         <Carousel.Item>
-          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+          <Row xs={1} sm={2} md={3} lg={6}>
             <CardRow searchKey='Hitman' />
           </Row>
         </Carousel.Item>
         <Carousel.Item>
-          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+          <Row xs={1} sm={2} md={3} lg={6}>
             <CardRow searchKey='Hitman' />
           </Row>
         </Carousel.Item>
