@@ -44,11 +44,11 @@ class CardRow extends Component {
       <>
         {this.state.search.map((film, i) => {
           return (
-            <Col key={i} className='px-1 carouselImg'>
+            <Col key={i} className=' carouselImg'>
               <img
                 src={film.Poster}
                 alt={film.Title}
-                style={{ width: '100%', height: '95%' }}
+                style={{ width: '100%', height: '100%' }}
               />
             </Col>
           );

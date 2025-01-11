@@ -46,7 +46,7 @@ const MainContent = (props) => {
         </div>
       </div>
       <h2>Trending Now</h2>
-      <Carousel>
+      <Carousel className='px-5'>
         <Carousel.Item>
           <Row xs={1} sm={2} md={3} lg={6}>
             <CardRow searchKey='Harry Potter' />
@@ -54,33 +54,33 @@ const MainContent = (props) => {
         </Carousel.Item>
         <Carousel.Item>
           <Row xs={1} sm={2} md={3} lg={6}>
-            <CardRow searchKey='Harry Potter' />
+            <CardRow searchKey='Lord of the Rings' />
           </Row>
         </Carousel.Item>
       </Carousel>
       <h2>Watch it Again</h2>
-      <Carousel>
+      <Carousel className='px-5'>
         <Carousel.Item>
           <Row xs={1} sm={2} md={3} lg={6}>
-            <CardRow searchKey='Lord of the rings' />
+            <CardRow searchKey='Hitman' />
           </Row>
         </Carousel.Item>
         <Carousel.Item>
           <Row xs={1} sm={2} md={3} lg={6}>
-            <CardRow searchKey='Lord of the rings' />
+            <CardRow searchKey='Mission Impossible' />
           </Row>
         </Carousel.Item>
       </Carousel>
       <h2>New Releases</h2>
-      <Carousel>
+      <Carousel className='px-5'>
         <Carousel.Item>
           <Row xs={1} sm={2} md={3} lg={6}>
-            <CardRow searchKey='Hitman' />
+            <CardRow searchKey='Fast&Furious' />
           </Row>
         </Carousel.Item>
         <Carousel.Item>
           <Row xs={1} sm={2} md={3} lg={6}>
-            <CardRow searchKey='Hitman' />
+            <CardRow searchKey='Indiana Jones' />
           </Row>
         </Carousel.Item>
       </Carousel>
