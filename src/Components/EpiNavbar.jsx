@@ -33,17 +33,17 @@ const EpiNavbar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href='#' className='text-white fw-bold nav'>
-              <i className='bi bi-search icons'></i>
-            </Nav.Link>
             <Nav.Link href='#' className='text-white fw-bold'>
+              <i className='bi bi-search icons navShadow'></i>
+            </Nav.Link>
+            <Nav.Link href='#' className='text-white fw-bold navShadow'>
               KIDS
             </Nav.Link>
             <Nav.Link href='#' className='text-white fw-bold'>
-              <i className='bi bi-bell icons'></i>
+              <i className='bi bi-bell icons navShadow'></i>
             </Nav.Link>
             <Nav.Link eventKey={2} href='#' className='text-white fw-bold'>
-              <i className='bi bi-person-circle icons'></i>
+              <i className='bi bi-person-circle icons navShadow'></i>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

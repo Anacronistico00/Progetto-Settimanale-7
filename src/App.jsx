@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EpiNavbar from '../src/Components/EpiNavbar';
-import './css/reset.css';
+import './css/style.css';
 import EpiFooter from './Components/EpiFooter';
 import MainComponent from './Components/MainComponent';
 

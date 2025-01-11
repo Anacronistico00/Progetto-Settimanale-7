@@ -41,22 +41,45 @@ const MainContent = () => {
           <i className='bi bi-grid-3x3 icons fs-4'></i>
         </div>
       </div>
+      <h2>Trending Now</h2>
       <Carousel>
-        <h2>Trending Now</h2>
         <Carousel.Item>
-          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+          <Row xs={1} sm={2} md={3} lg={6}>
+            <CardRow searchKey='Harry Potter' />
+          </Row>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Row xs={1} sm={2} md={3} lg={6}>
             <CardRow searchKey='Harry Potter' />
           </Row>
         </Carousel.Item>
       </Carousel>
       <h2>Watch it Again</h2>
-      <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
-        <CardRow searchKey='Lord of the rings' />
-      </Row>
+      <Carousel>
+        <Carousel.Item>
+          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+            <CardRow searchKey='Lord of the rings' />
+          </Row>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+            <CardRow searchKey='Lord of the rings' />
+          </Row>
+        </Carousel.Item>
+      </Carousel>
       <h2>New Releases</h2>
-      <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
-        <CardRow searchKey='Hitman' />
-      </Row>
+      <Carousel>
+        <Carousel.Item>
+          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+            <CardRow searchKey='Hitman' />
+          </Row>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Row xs={1} sm={2} md={3} lg={6} className='my-3 text-center'>
+            <CardRow searchKey='Hitman' />
+          </Row>
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
 };

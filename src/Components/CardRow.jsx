@@ -1,11 +1,13 @@
 import { Component } from 'react';
-import { Col } from 'react-bootstrap';
+import { Col, Alert, Spinner } from 'react-bootstrap';
 
 const URL = 'http://www.omdbapi.com/?apikey=a5544ab3&s=';
 
 class CardRow extends Component {
   state = {
     search: [],
+    isLoading: true,
+    isError: false,
   };
 
   getFilms = async () => {
@@ -23,9 +25,14 @@ class CardRow extends Component {
 
       this.setState({
         search: firstSix,
+        isLoading: false,
       });
     } catch (error) {
       console.log('ERROR', error);
+      this.setState({
+        isLoading: false,
+        isError: true,
+      });
     }
   };
 
@@ -38,7 +45,7 @@ class CardRow extends Component {
       <>
         {this.state.search.map((film, i) => {
           return (
-            <Col key={i} className='px-1'>
+            <Col key={i} className='px-1 carouselImg'>
               <img
                 src={film.Poster}
                 alt={film.Title}
@@ -47,6 +54,39 @@ class CardRow extends Component {
             </Col>
           );
         })}
+
+        {this.state.isLoading && (
+          <div className='text-center'>
+            <div>
+              <p>Caricamento in corso...</p>
+
+              <Spinner
+                animation='grow'
+                size='sm'
+                variant='info'
+                className='ms-2'
+              />
+              <Spinner
+                animation='grow'
+                size='sm'
+                variant='info'
+                className='ms-2'
+              />
+              <Spinner
+                animation='grow'
+                size='sm'
+                variant='info'
+                className='ms-2'
+              />
+            </div>
+          </div>
+        )}
+
+        {this.state.isError && (
+          <div className='text-center'>
+            <Alert variant='danger'>Si è verificato un errore</Alert>
+          </div>
+        )}
       </>
     );
   }

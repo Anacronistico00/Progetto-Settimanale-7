@@ -1,0 +1,50 @@
+html,
+body {
+  box-sizing: border-box;
+  background-color: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #6c7571;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white !important;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carouselImg {
+  opacity: 0.5;
+}
+
+.carouselImg:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  justify-content: start;
+  width: 30px;
+}
+.carousel-control-next {
+  justify-content: end;
+  width: 30px;
+}
+
+.carousel-control-next span,
+.carousel-control-prev span {
+  size: 30px;
+}
+
+.navShadow:hover {
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
