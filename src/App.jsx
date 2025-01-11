@@ -1,14 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import EpiNavbar from '../src/Components/EpiNavbar';
 import './css/style.css';
-import EpiFooter from './Components/EpiFooter';
+import EpiNavbar from '../src/Components/EpiNavbar';
 import MainComponent from './Components/MainComponent';
+// import EpiProfile from './Components/EpiProfile';
+// import EpiSettings from './Components/EpiSettings';
+import EpiFooter from './Components/EpiFooter';
 
 function App() {
   return (
     <>
       <EpiNavbar />
       <MainComponent />
+      {/* <EpiProfile /> */}
+      {/* <EpiSettings /> */}
       <EpiFooter />
     </>
   );

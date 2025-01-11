@@ -1,4 +1,10 @@
-import { Navbar, Container, Nav, Dropdown } from 'react-bootstrap';
+import {
+  Navbar,
+  Container,
+  Nav,
+  Dropdown,
+  DropdownButton,
+} from 'react-bootstrap';
 
 const EpiNavbar = () => {
   return (
@@ -42,30 +48,26 @@ const EpiNavbar = () => {
             <Nav.Link href='#' className='text-white fw-bold'>
               <i className='bi bi-bell icons navShadow'></i>
             </Nav.Link>
-            <Nav.Link eventKey={2} href='#' className='text-white fw-bold p-0'>
-              <Dropdown>
-                <Dropdown.Toggle variant='dark' id='dropdown-basic'>
-                  <i className='bi bi-person-circle icons'></i>
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu className='bg-dark ms-auto'>
-                  <Dropdown.Item href='#' className='text-white'>
-                    Comedy
-                  </Dropdown.Item>
-                  <Dropdown.Item href='#' className='text-white'>
-                    drama
-                  </Dropdown.Item>
-                  <Dropdown.Item href='#' className='text-white'>
-                    Thriller
-                  </Dropdown.Item>
-                  <Dropdown.Item href='#' className='text-white'>
-                    Horror
-                  </Dropdown.Item>
-                  <Dropdown.Item href='#' className='text-white'>
-                    Love
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+            <Nav.Link href='#' className='text-white fw-bold p-0'>
+              <DropdownButton
+                align='end'
+                title={<i className='bi bi-person-circle icons'></i>}
+                id='dropdown-menu-align-end'
+              >
+                <Dropdown.Item eventKey='1'>
+                  <i className='bi bi-person me-1'></i>Manage Profile
+                </Dropdown.Item>
+                <Dropdown.Item eventKey='2'>
+                  <i className='bi bi-gear me-1'></i>Account
+                </Dropdown.Item>
+                <Dropdown.Item eventKey='3'>
+                  <i className='bi bi-info-circle me-1'></i>Help Center
+                </Dropdown.Item>
+                <Dropdown.Divider />
+                <Dropdown.Item eventKey='4'>
+                  <i className='bi bi-power me-1'></i>Sign Out
+                </Dropdown.Item>
+              </DropdownButton>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
