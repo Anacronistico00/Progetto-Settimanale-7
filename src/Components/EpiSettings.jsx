@@ -1,8 +1,11 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
 
-const epiSettings = () => {
+const epiSettings = (props) => {
   return (
-    <Container className='m-auto w-75 text-secondary'>
+    <Container
+      className='m-auto w-75 text-secondary'
+      style={{ display: props.display }}
+    >
       <h1>Account</h1>
       <hr />
       <Container>

@@ -1,9 +1,13 @@
-import { Carousel, Dropdown, Row } from 'react-bootstrap';
+import { Carousel, Container, Dropdown, Row } from 'react-bootstrap';
 import CardRow from './CardRow';
 
-const MainContent = () => {
+const MainContent = (props) => {
   return (
-    <div className='container-fluid px-4 text-white'>
+    <Container
+      fluid
+      className=' px-4 text-white'
+      style={{ display: props.display }}
+    >
       <div className='d-flex justify-content-between'>
         <div className='d-flex'>
           <h2 className='mb-4 fs-1 fw-bolder'>TV Shows</h2>
@@ -80,7 +84,7 @@ const MainContent = () => {
           </Row>
         </Carousel.Item>
       </Carousel>
-    </div>
+    </Container>
   );
 };
 

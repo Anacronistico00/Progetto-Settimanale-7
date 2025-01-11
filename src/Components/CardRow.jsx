@@ -21,7 +21,6 @@ class CardRow extends Component {
       }
       const data = await response.json();
       const firstSix = data.Search.slice(0, 6);
-      console.log(data);
 
       this.setState({
         search: firstSix,

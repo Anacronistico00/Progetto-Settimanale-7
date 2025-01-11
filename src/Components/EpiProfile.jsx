@@ -7,9 +7,12 @@ import {
   Row,
 } from 'react-bootstrap';
 
-const EpiProfile = () => {
+const EpiProfile = (props) => {
   return (
-    <Container className='m-auto text-secondary w-50'>
+    <Container
+      className='m-auto text-secondary w-50'
+      style={{ display: props.display }}
+    >
       <Container>
         <h1 className='text-center mt-5 text-white'>Edit Profile</h1>
         <hr />
