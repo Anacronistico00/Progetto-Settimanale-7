@@ -47,8 +47,8 @@ class FullPage extends Component {
     return (
       <>
         <header>
-          <Navbar expand='lg'>
-            <Container fluid={true}>
+          <Container fluid={true}>
+            <Navbar expand='lg'>
               <img
                 src='/logo.png'
                 alt='Netflix logo'
@@ -119,8 +119,8 @@ class FullPage extends Component {
                   </div>
                 </Nav>
               </Navbar.Collapse>
-            </Container>
-          </Navbar>
+            </Navbar>
+          </Container>
         </header>
 
         <main>

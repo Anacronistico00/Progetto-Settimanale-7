@@ -56,7 +56,7 @@ const EpiProfile = (props) => {
               <p className='my-3'>
                 Show files for all maturity settings for this profile
               </p>
-              <Button className='text-secondary bg-black border-secondary rounded-0'>
+              <Button className='text-secondary bg-black border-secondary rounded-0 profileButtons'>
                 EDIT
               </Button>
             </Col>
@@ -89,10 +89,10 @@ const EpiProfile = (props) => {
       <hr />
       <Container className='px-5 d-flex justify-content-center flex-wrap'>
         <Button className='btn-light text-black fw-bold mx-3 my-3'>SAVE</Button>
-        <Button className='border-secondary bg-dark text-secondary mx-3 my-3'>
+        <Button className='border-secondary bg-dark text-secondary mx-3 my-3 profileButtons'>
           CANCEL
         </Button>
-        <Button className='border-danger bg-dark text-danger mx-3 my-3'>
+        <Button className='border-danger bg-dark text-danger mx-3 my-3 profileButtons'>
           DELETE PROFILE
         </Button>
       </Container>

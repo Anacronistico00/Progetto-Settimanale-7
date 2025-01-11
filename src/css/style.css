@@ -1,3 +1,4 @@
+/* Reset*/
 html,
 body {
   box-sizing: border-box;
@@ -18,6 +19,8 @@ a:hover,
 .footer-icon:hover {
   color: white !important;
 }
+
+/*Header*/
 
 .navShadow:hover,
 .bi-grid:hover,
@@ -44,9 +47,13 @@ a:hover,
 }
 
 #dropdown-basic:hover,
-#dropdown-menu-align-responsive-1:hover {
+#dropdown-menu-align-responsive-1:hover,
+#dropdown-menu-align-end:hover {
   background-color: rgb(51, 51, 51) !important;
 }
+
+/* MainContent*/
+
 .carousel-indicators {
   display: none;
 }
@@ -72,4 +79,16 @@ a:hover,
 .carousel-control-next span,
 .carousel-control-prev span {
   size: 30px;
+}
+
+/* Profile*/
+
+#dropdown-menu-align-end {
+  background-color: #000000;
+  border: 1px solid white;
+  border-radius: 0;
+}
+
+.profileButtons:hover {
+  color: white !important;
 }
