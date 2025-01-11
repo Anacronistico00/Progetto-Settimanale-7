@@ -4,11 +4,12 @@ import {
   Nav,
   Dropdown,
   DropdownButton,
+  ButtonGroup,
 } from 'react-bootstrap';
 
 const EpiNavbar = () => {
   return (
-    <Navbar collapseOnSelect expand='md'>
+    <Navbar expand='lg'>
       <Container fluid={true}>
         <img
           src='/logo.png'
@@ -50,9 +51,10 @@ const EpiNavbar = () => {
             </Nav.Link>
             <Nav.Link href='#' className='text-white fw-bold p-0'>
               <DropdownButton
-                align='end'
+                as={ButtonGroup}
+                align={{ lg: 'end' }}
                 title={<i className='bi bi-person-circle icons'></i>}
-                id='dropdown-menu-align-end'
+                id='dropdown-menu-align-responsive-1'
               >
                 <Dropdown.Item eventKey='1'>
                   <i className='bi bi-person me-1'></i>Manage Profile

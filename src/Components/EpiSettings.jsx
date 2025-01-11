@@ -16,7 +16,9 @@ const epiSettings = () => {
           <Col xs={12} md={8}>
             <div className='d-flex justify-content-between'>
               <p className='fw-bold text-white'>Jonathan@fontaine.com</p>
-              <a href='#'>Change account email</a>
+              <a href='#' className='text-end'>
+                Change account email
+              </a>
             </div>
             <div className='d-flex justify-content-between'>
               <p className=''>Password: *******</p>
@@ -49,7 +51,9 @@ const epiSettings = () => {
                     Jonathan@fontaine.com
                   </p>
 
-                  <a href='#'>Update payment info</a>
+                  <a href='#' className='text-end'>
+                    Update payment info
+                  </a>
                 </div>
                 <div className='d-flex justify-content-end'>
                   <a href='#'>Billing Details</a>
@@ -80,7 +84,7 @@ const epiSettings = () => {
             <p className='fw-bold text-white'>
               Standard <i className='bi bi-badge-hd'></i>
             </p>
-            <a href='#' className='pe-4'>
+            <a href='#' className='text-end'>
               Change plan
             </a>
           </div>
@@ -106,51 +110,52 @@ const epiSettings = () => {
       </Container>
 
       <hr />
-
-      <Row>
-        <Col md={4}>
-          <p className='fs-5'>MY PROFILE</p>
-        </Col>
-        <Col md={4} className='d-flex'>
-          <Col className='d-flex align-items-center'>
-            <img
-              src='/public/avatar.png'
-              alt='Profile Image'
-              className='w-25'
-            />
-            <p className='fw-bold ms-4 text-white'>Jonathan Fontaine</p>
+      <Container>
+        <Row>
+          <Col md={4}>
+            <p className='fs-5'>MY PROFILE</p>
           </Col>
-        </Col>
-        <Col md={4}>
-          <Col className='d-flex flex-column'>
-            <a href='#'>Manage Profile</a>
-            <a href='#'>Add profile email</a>
+          <Col md={4} className='d-flex'>
+            <Col className='d-flex align-items-center'>
+              <img
+                src='/public/avatar.png'
+                alt='Profile Image'
+                className='w-25'
+              />
+              <p className='fw-bold ms-4 text-white'>Jonathan Fontaine</p>
+            </Col>
           </Col>
-        </Col>
-      </Row>
+          <Col md={4}>
+            <Col className='d-flex flex-column'>
+              <a href='#'>Manage Profile</a>
+              <a href='#'>Add profile email</a>
+            </Col>
+          </Col>
+        </Row>
 
-      <Row className='my-5'>
-        <Col md={4}></Col>
-        <Col md={4}>
-          <div className='d-flex flex-column'>
-            <a href='#' className='py-2'>
-              Language
-            </a>
-            <a href='#'>Playback settings</a>
-            <a href='#' className='py-2'>
-              Subtitle Appearance
-            </a>
-          </div>
-        </Col>
-        <Col md={4}>
-          <div className='d-flex flex-column'>
-            <a href='#' className='py-2'>
-              Viewing activity
-            </a>
-            <a href='#'>Ratings</a>
-          </div>
-        </Col>
-      </Row>
+        <Row className='my-5'>
+          <Col md={4}></Col>
+          <Col md={4}>
+            <div className='d-flex flex-column'>
+              <a href='#' className='py-2'>
+                Language
+              </a>
+              <a href='#'>Playback settings</a>
+              <a href='#' className='py-2'>
+                Subtitle Appearance
+              </a>
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className='d-flex flex-column'>
+              <a href='#' className='py-2'>
+                Viewing activity
+              </a>
+              <a href='#'>Ratings</a>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </Container>
   );
 };

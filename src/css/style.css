@@ -49,7 +49,7 @@ a:hover {
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 }
 
-#dropdown-menu-align-end {
+#dropdown-menu-align-responsive-1 {
   background-color: black;
   border: 1px solid white;
   border-radius: 0;
@@ -68,6 +68,6 @@ a:hover {
 }
 
 #dropdown-basic:hover,
-#dropdown-menu-align-end:hover {
+#dropdown-menu-align-responsive-1:hover {
   background-color: rgb(51, 51, 51) !important;
 }
