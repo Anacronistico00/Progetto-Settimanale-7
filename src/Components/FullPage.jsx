@@ -27,19 +27,19 @@ class FullPage extends Component {
     });
   };
 
-  displayProfile = () => {
-    this.setState({
-      main: 'none',
-      profile: 'block',
-      settings: 'none',
-    });
-  };
-
   displaySettings = () => {
     this.setState({
       main: 'none',
       profile: 'none',
       settings: 'block',
+    });
+  };
+
+  displayProfile = () => {
+    this.setState({
+      main: 'none',
+      profile: 'block',
+      settings: 'none',
     });
   };
 
