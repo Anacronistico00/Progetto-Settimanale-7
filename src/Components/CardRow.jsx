@@ -12,7 +12,6 @@ class CardRow extends Component {
 
   getFilms = async () => {
     const searchKey = this.props.searchKey;
-    console.log(searchKey);
 
     try {
       const response = await fetch(URL + searchKey);

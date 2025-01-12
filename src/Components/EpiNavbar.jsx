@@ -7,10 +7,10 @@ import {
   ButtonGroup,
 } from 'react-bootstrap';
 
-const EpiNavbar = () => {
+const EpiNavbar = (props) => {
   return (
-    <Navbar expand='lg'>
-      <Container fluid={true}>
+    <Container fluid={true}>
+      <Navbar expand='lg'>
         <img
           src='/logo.png'
           alt='Netflix logo'
@@ -23,7 +23,11 @@ const EpiNavbar = () => {
         />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto '>
-            <Nav.Link href='#' className='text-white fw-bold'>
+            <Nav.Link
+              href='#'
+              className='text-white fw-bold'
+              onClick={props.home}
+            >
               Home
             </Nav.Link>
             <Nav.Link href='#' className='text-secondary fw-bold'>
@@ -49,17 +53,18 @@ const EpiNavbar = () => {
             <Nav.Link href='#' className='text-white fw-bold'>
               <i className='bi bi-bell icons navShadow'></i>
             </Nav.Link>
-            <Nav.Link href='#' className='text-white fw-bold p-0'>
+            <div className='text-white fw-bold p-0'>
               <DropdownButton
                 as={ButtonGroup}
                 align={{ lg: 'end' }}
                 title={<i className='bi bi-person-circle icons'></i>}
                 id='dropdown-menu-align-responsive-1'
               >
-                <Dropdown.Item eventKey='1'>
-                  <i className='bi bi-person me-1'></i>Manage Profile
+                <Dropdown.Item eventKey='1' onClick={props.profile}>
+                  <i className='bi bi-person me-1'></i>
+                  Manage Profile
                 </Dropdown.Item>
-                <Dropdown.Item eventKey='2'>
+                <Dropdown.Item eventKey='2' onClick={props.settings}>
                   <i className='bi bi-gear me-1'></i>Account
                 </Dropdown.Item>
                 <Dropdown.Item eventKey='3'>
@@ -70,11 +75,11 @@ const EpiNavbar = () => {
                   <i className='bi bi-power me-1'></i>Sign Out
                 </Dropdown.Item>
               </DropdownButton>
-            </Nav.Link>
+            </div>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>
+    </Container>
   );
 };
 
