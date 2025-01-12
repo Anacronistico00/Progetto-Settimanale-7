@@ -60,18 +60,18 @@ const EpiNavbar = (props) => {
                 title={<i className='bi bi-person-circle icons'></i>}
                 id='dropdown-menu-align-responsive-1'
               >
-                <Dropdown.Item eventKey='1' onClick={props.profile}>
+                <Dropdown.Item onClick={props.profile}>
                   <i className='bi bi-person me-1'></i>
                   Manage Profile
                 </Dropdown.Item>
-                <Dropdown.Item eventKey='2' onClick={props.settings}>
+                <Dropdown.Item onClick={props.settings}>
                   <i className='bi bi-gear me-1'></i>Account
                 </Dropdown.Item>
-                <Dropdown.Item eventKey='3'>
+                <Dropdown.Item>
                   <i className='bi bi-info-circle me-1'></i>Help Center
                 </Dropdown.Item>
                 <Dropdown.Divider />
-                <Dropdown.Item eventKey='4'>
+                <Dropdown.Item>
                   <i className='bi bi-power me-1'></i>Sign Out
                 </Dropdown.Item>
               </DropdownButton>
